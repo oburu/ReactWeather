@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Route, Router, IndexRoute, browserHistory} from 'react-router';
+import {Route, Router, IndexRoute, hashHistory} from 'react-router';
 import Main from './main';
 import Weather from './weather';
 import About from './about';
@@ -12,7 +12,7 @@ $(document).foundation();
 class App extends Component{
   render() {
     return(
-      <Router history={browserHistory}>
+      <Router history={hashHistory}>
         <Route path="/" component={Main}>
           <Route path="about" component={About}/>
           <Route path="examples" component={Examples}/>
