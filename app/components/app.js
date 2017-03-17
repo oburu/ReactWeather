@@ -5,6 +5,10 @@ import Weather from './weather';
 import About from './about';
 import Examples from './examples';
 
+//load foundation (esto es una mierda, pero es lo que hay, por ahora)
+require('style!css!foundation-sites/dist/foundation.min.css');
+$(document).foundation();
+
 class App extends Component{
   render() {
     return(
