@@ -4,7 +4,7 @@ var express = require('express');
 var app = express();
 const PORT = process.env.PORT || 3000 ;//eviroment variable or heroku/firebase
 
-app.use(funtion(req, res, next){
+app.use(function(req, res, next){
   if(req.headers['x-forwarded-proto'] === 'http'){
     next();
   } else {
@@ -15,5 +15,5 @@ app.use(funtion(req, res, next){
 app.use(express.static('public'));
 
 app.listen(PORT, function () {
-  console.log('Express server is up on port' + PORT);
+  console.log('Express server is up on port: ' + PORT);
 });
