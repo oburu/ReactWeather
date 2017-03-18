@@ -9,6 +9,9 @@ import Examples from './examples';
 require('style!css!foundation-sites/dist/foundation.min.css');
 $(document).foundation();
 
+//App css
+require('style!css!sass!../styles/app.scss');
+
 class App extends Component{
   render() {
     return(
